@@ -57,7 +57,7 @@ const getGoods = () => {
         })
     })
 
-    if (localStorage.getItem('goods') && window.location.pathname === '/goods.html') {
+    if (localStorage.getItem('goods') && window.location.pathname === 'goods.html') {
         renderGoods(JSON.parse(localStorage.getItem('goods')))
     }
 
