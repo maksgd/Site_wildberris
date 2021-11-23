@@ -42,7 +42,7 @@ const search = function () {
                 })
                 localStorage.setItem('goods', JSON.stringify(array))
 
-                if (window.location.pathname === 'goods.html' || localStorage.getItem('goods')) {
+                if (window.location.pathname === '/goods.html') {
                     renderGoods(array)
                 } else {
                     window.location.href = 'goods.html'

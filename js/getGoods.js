@@ -42,7 +42,7 @@ const getGoods = () => {
                 if (window.location.pathname === '/goods.html') {
                     renderGoods(array)
                 } else {
-                    window.location.href = 'goods.html'
+                    window.location.href = '/goods.html'
                 }
             })
     }
@@ -57,7 +57,8 @@ const getGoods = () => {
         })
     })
 
-    if (localStorage.getItem('goods') && window.location.pathname === 'goods.html') {
+
+    if (localStorage.getItem('goods') && window.location.pathname === '/goods.html') {
         renderGoods(JSON.parse(localStorage.getItem('goods')))
     }
 

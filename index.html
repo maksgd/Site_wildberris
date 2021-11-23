@@ -17,10 +17,13 @@
 	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="css/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+	<script type="module" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<script src="js/cart.js" defer></script>
 	<script src="js/search.js" defer></script>
 	<script src="js/getGoods.js" defer></script>
 	<script src="js/smoothScroll.js" defer></script>
+	<script src="js/slider.js" defer></script>
 </head>
 <!-- class="show-goods" -->
 
@@ -76,7 +79,7 @@
 		</div>
 		<!-- /.row -->
 	</header>
-	<section class="slider swiper-container">
+	<section class="slider  swiper-container">
 		<div class="swiper-wrapper">
 			<section class="slide slide-1 swiper-slide">
 				<div class="container">
@@ -588,15 +591,7 @@
 					</tr>
 				</thead>
 				<tbody class="cart-table__goods">
-					<tr>
-						<td>name</td>
-						<td>price$</td>
-						<td><button class="cart-btn-minus"">-</button></td>
-						<td>2</td>
-						<td><button class=" cart-btn-plus"">+</button></td>
-						<td>10$</td>
-						<td><button class="cart-btn-delete"">x</button></td>
-					</tr>
+
 				</tbody>
 				<tfoot>
 					<tr>
@@ -604,7 +599,7 @@
 						<th class="card-table__total" colspan="2">10000$</th>
 					</tr>
 
-					</tfoot>
+				</tfoot>
 			</table>
 			<form class="modal-form" action="">
 				<input class="modal-input" type="text" placeholder="Имя" name="nameCustomer">
